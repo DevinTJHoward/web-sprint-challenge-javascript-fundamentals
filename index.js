@@ -59,8 +59,11 @@ const zooAnimals = [
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function animalNames(){
+    const displayNames = [];
+    zooAnimals.array.forEach( item => displayNames.push(`${item.animal_name}, ${item.scientific_name}`));
+      
+    
   }
   
 
@@ -142,27 +145,23 @@ function greeting(/*Your Code Here */){
 /* 🐴🐴🐴 Step 1: Base Constructor 🐴🐴🐴
  Use the constructor function named CuboidMaker to accept properties for length, width, and height which can be initialized as an object
 */
-function CuboidMaker(length, width, height){
+function CuboidMaker(attr){
   
-    this.length = length.length;
-    this.width = width.width;
-    this.height = height.height;
+    this.length = attr.length;
+    this.width = attr.width;
+    this.height = attr.height;
     
 }
-// volume(){
-
-// }
-// surfacaArea(){
-
-// }
-
+ 
 
 
 /* 🐴🐴🐴 Step 2: Volume Method 🐴🐴🐴
   Create a method called volume using CuboidMaker's prototype that returns the volume of a given cuboid's length, width, and height
   Formula for cuboid volume: length * width * height   */
+CuboidMaker.prototype.volume = function(){
 
-
+   return this.length * this.width * this.height;
+ }
 
 
 
@@ -172,7 +171,9 @@ function CuboidMaker(length, width, height){
   2 * (length * width + length * height + width * height)  */
 
 
-
+CuboidMaker.prototype.surfaceArea = function(){
+  return 2 * (this.length * this.width + this.length * this.height + this.width * this.height)
+}
 
 
 /* 🐴🐴🐴 Step 4: Create a new object that uses CuboidMaker 🐴🐴🐴
