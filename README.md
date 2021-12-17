@@ -37,7 +37,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 3. Explain what a closure is.
 
-   (3) A closure is the ability to take functions or variables on the parent level scope and use it on the child.
+   (3) A closure is when an inner function reaches out of its scope to grab a variable defined in an outer function.
 
 4. Describe the four principles of the 'this' keyword.
 
