@@ -26,13 +26,32 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
+    (1) .map - creates a new array by transforming every element in an array individually. 
+          (An example might be if we wanted to keep track of how many entries into all of the contests to the county fair  )
+        .filter - creates a new array by removing elements that don't output a true or false conditional. (An example would be if we wanted to filter out pieces of info that gives you all the food eating contest winners from 1980 - 1988 in Illinois)
+        .reduce - takes all of the elements in an array and reduces them into a single value.( An example would be if we wanted to look through a bunch of information at the state fairs eating contest to pull just the profit of the fair for a day. )
+
 2. Explain the difference between a callback and a higher order function.
+
+    (2) The difference between the two  is that the callback function is a  function that is passed into another function, and the Higher Order Function recieves other functions as patameters or returns a function.
 
 3. Explain what a closure is.
 
+   (3) A closure is the ability to take functions or variables on the parent level scope and use it on the child.
+
 4. Describe the four principles of the 'this' keyword.
 
-5. Why do we need super() in an extended class?
+  (1) Window Binding-- Error will pop up if not "binding" correctly.
+
+  (2)Implicit Binding-- Look to the left of the dot.
+
+  (3)Explicit Binding-- uses (.bind, .apply, or .call)Call will immediately invoke the function and you pass in your arguments 1 by 1. Apply will immediately invoke the function and you pass in your arguments as an array. Bind you pass in your arguments 1 by 1, but it will not immediately invoke the function, instead it returns a brand new function that can be invoked later.
+
+  (4.)New Binding-- is one that keeps eluding me, new binding happens when a function is inviled as a constructor function using the new keyword. What was just created was the new Binding
+
+5. Why do we need super() in an extended class? 
+
+    (5) The super() allows us to call the parent's constructor method and gets access to the parent's properties and methods, without the super() and only the (extend) we would get an error.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
