@@ -33,7 +33,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 2. Explain the difference between a callback and a higher order function.
 
-    (2) The difference between the two  is that the callback function is a  function that is passed into another function, and the Higher Order Function recieves other functions as patameters or returns a function.
+    (2) The difference between the two  is that the callback function is a  function that is passed into another function, and the Higher Order Function recieves other functions as parameters or returns a function.
 
 3. Explain what a closure is.
 

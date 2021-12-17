@@ -17,7 +17,7 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-
+// (Task1) NestesdFunction can accsess internal because of nestesFunction is a HigherOrder Function,meaning it recieved other functions as parameters or returns a function. (a function within another function)
 
 
 
@@ -28,9 +28,12 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
-
+function summation(number) {
+   let count = 0;
+ for (let i = 1; i <= number; i++) {
+   count += i;
+ }
+ return count;
   }
  
 
@@ -139,9 +142,20 @@ function greeting(/*Your Code Here */){
 /* 🐴🐴🐴 Step 1: Base Constructor 🐴🐴🐴
  Use the constructor function named CuboidMaker to accept properties for length, width, and height which can be initialized as an object
 */
-function CuboidMaker(/*Your Code Here */){
-  /*Your Code Here */
+function CuboidMaker(length, width, height){
+  
+    this.length = length.length;
+    this.width = width.width;
+    this.height = height.height;
+    
 }
+// volume(){
+
+// }
+// surfacaArea(){
+
+// }
+
 
 
 /* 🐴🐴🐴 Step 2: Volume Method 🐴🐴🐴
